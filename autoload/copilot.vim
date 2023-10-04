@@ -163,7 +163,7 @@ let s:filetype_defaults = {
       \ '.': 0}
 
 function! s:BufferDisabled() abort
-  if &buftype =~# '^\%(help\|prompt\|quickfix\|terminal\)$'
+  if &buftype =~# '^\%(help\|prompt\|quickfix\)$'
     return 5
   endif
   if exists('b:copilot_disabled')
